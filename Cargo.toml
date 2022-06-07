@@ -1,0 +1,27 @@
+[package]
+name = "rwinreg"
+version = "0.2.0"
+authors = ["Matthew Seyer <https://github.com/forensicmatt/r-winreg>"]
+
+[lib]
+name = "rwinreg"
+
+[dependencies]
+clap = "2"
+log = "0.3"
+env_logger = "0.3"
+byteorder = "1"
+encoding = "0.2"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+trace-error = "0.1.5"
+bitflags = "1.0"
+seek_bufread = "~1.2"
+chrono = { version = "0.4", features = ["serde"] }
+tap = { version="0.1.0", git="https://github.com/tap-ir/tap.git" }
+
+#[dependencies.r-winstructs]
+#version = "0.3.2"
+#branch = "master"
+#git = "https://github.com/forensicmatt/r-winstructs"
